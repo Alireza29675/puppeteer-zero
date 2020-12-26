@@ -1,5 +1,5 @@
-const npmPackage = () => {
-  console.log(`Hey, here's the new package!`);
-};
+const puppeteer = require('puppeteer-core');
 
-export default npmPackage;
+puppeteer.launch({
+  executablePath: '<path-to-my-chrome-exec>',
+});

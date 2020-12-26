@@ -1,1 +1,1 @@
-# Package Template
+# puppeteer-zero

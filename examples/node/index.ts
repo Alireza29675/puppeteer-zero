@@ -1,3 +1,9 @@
-import puppeteer from '../../src';
+import { launch } from '../../src';
 
-console.log(puppeteer.launch);
+(async () => {
+  const browser = await launch({
+    headless: false,
+  });
+  const page = await browser.newPage();
+  await page.goto('https://example.com');
+})();

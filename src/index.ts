@@ -1,5 +1,3 @@
-const puppeteer = require('puppeteer-core');
+import puppeteer from 'puppeteer-core';
 
-puppeteer.launch({
-  executablePath: '<path-to-my-chrome-exec>',
-});
+export default puppeteer;

@@ -1,3 +1,3 @@
-import pack from '../../src'
+import puppeteer from '../../src';
 
-pack()
+puppeteer.launch();

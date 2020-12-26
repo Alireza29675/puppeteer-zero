@@ -1,11 +1,14 @@
 import puppeteer from 'puppeteer-core';
+// @ts-ignore
 import locateChrome from 'locate-chrome';
 
 const originalPuppeteerLaunch = puppeteer.launch;
 
-puppeteer.launch = function launch(options?: puppeteer.LaunchOptions) {
+puppeteer.launch = async function launch(options?: puppeteer.LaunchOptions) {
+  const executablePath = await locateChrome();
+
   return originalPuppeteerLaunch({
-    executablePath: '',
+    executablePath,
     ...options,
   });
 };

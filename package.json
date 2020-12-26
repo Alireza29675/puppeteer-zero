@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.7.1"
   },
   "dependencies": {
+    "locate-chrome": "^0.1.1",
     "puppeteer-core": "^5.5.0"
   }
 }

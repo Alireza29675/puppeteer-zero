@@ -1,3 +1,3 @@
 import puppeteer from '../../src';
 
-puppeteer.launch();
+console.log(puppeteer.launch);
